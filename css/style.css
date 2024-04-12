@@ -1,0 +1,252 @@
+
+/* color palette:
+#ad95c6
+#f8d4fa
+#8787dd 
+#6c8bb7
+#cff6fe */
+
+/* Styling for HOME PAGE*/
+
+/* Add CSS for skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+}
+
+body {
+    background-color: #fff; /* Background color for the body */
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .navbar {
+    background-color: transparent !important; /* Set background color to transparent */
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .navbar-nav .nav-link {
+    color: #6c8bb7; /* Default color for the nav links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    margin-left: 20px;
+    font-weight: bold; /* Set the font weight to bold */
+    font-size: 20px; /* Increase the font size */
+  }
+  
+  /* Hover effect for nav links */
+  .navbar-nav .nav-link:hover {
+    color:#ad95c6; /* Color change on hover */
+  }
+
+  /* Styling for the pink overlay */
+  .pink-overlay {
+    position: relative;
+    background-color: rgba(248, 212, 250, 0.35); /* Pink with 35% transparency */
+    height: calc(100vh - 45vh); /* Height is full viewport height minus pink overlay height */
+    overflow: hidden; /* Hide overflow content */
+    text-align: center; /* Center text horizontally */
+}
+
+
+  /* Styling for the logo */
+  .logo {
+    max-width: 100px; /* Adjust size as needed */
+  }
+  
+  /* Styling for the text next to the logo */
+  .logo-text {
+    color: #6c8bb7; /* Text color */
+    font-weight: bold; /* Optionally make text bold */
+  }
+
+  /* Custom CSS to remove border lines around cards */
+
+.fs-1 {
+    color:#ad95c6;
+    font-family: "Prosto One", sans-serif;
+    font-weight: bold;
+}
+  
+  /* Style adjustments */
+@media (min-width: 992px) {
+    /* Center align the text in the first card */
+    .card-body {
+      text-align: center;
+    }
+  
+    /* Adjust margin between cards */
+    .mb-3 {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  /* Styling for the footer */
+  .footer {
+    text-align: center;
+    margin-top: 20px; /* Reduce margin to decrease space */
+    color: #6c8bb7; /* Text color for footer */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Padding top and bottom */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  
+  .larger-font {
+    font-size: 3rem; /* Larger font size for HOME */
+    color:#6c8bb7;
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    padding-top: 40vh;
+}
+  /* Styling for the astronaut image */
+  
+.astronaut-container {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Additional styles for animations */
+.floating {
+    animation: floatingAnimation 2s ease-in-out infinite;
+}
+
+@keyframes floatingAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* Styling for the text on the background image */
+.bg-text {
+    text-align: center;
+    color: #707070; /* Text color for the background text */
+    font-size: 15px;
+  }
+  
+  /* Styling for the content container */
+.content-container {
+    margin-top: 0vh; /* Offset to position below the pink overlay */
+    z-index: 1; /* Ensure content is above the pink overlay */
+    position: relative; /* Maintain stacking context */
+  }
+    /* Styling for the custom card*/
+    .card-body {
+        color: #6c8bb7; /* Text color */
+    }
+
+/* Styling for ABOUT PAGE*/
+
+/* Centering the container */
+
+  .card-title-custom {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .img-fluid-mx-auto{
+    max-width: 20%; 
+    height: auto;
+  }
+
+  /* Styling for the image inside the card */
+  .card-img-top {
+    max-width: 30%;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure it's displayed as a block element for margin auto to work */
+    margin-top:10px;
+  }
+  
+  /* Styling for the card body */
+  .card-body {
+    text-align: center; /* Center align the content */
+  }
+  
+  /* Styling for the custom text color */
+  .custom-text {
+    color: #6c8bb7; /* Text color */
+  }
+  
+  /* Styling for the button */
+  .btn-custom {
+    background-color: #f8d4fa; /* Button background color */
+    color: #6c8bb7; /* Button text color */
+    border-color: #6c8bb7; /* Border color */
+    margin-top: 10px; /* Add margin above the button */
+    font-weight: bold; /* Set the font weight to bold */
+    font-size: 20px; /* Increase the font size */
+  }
+  
+  .btn-custom:hover {
+    background-color: #ad95c6; /* Change background color on hover */
+    color:#f8d4fa;
+  }
+  
+
+  /* for CONTACT PAGE */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 3vh;
+  }
+/* Adjust border width and padding for the contact section */
+.border-custom {
+    border: 1px solid #ad95c6; /* Adjust border color and width */
+    border-radius: 10px;
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 20px;
+}
+
+
+/* Style the form inputs and textarea */
+.form-control {
+    margin-bottom: 10px;
+    border: 1px solid #ad95c6; /* Adjust border color */
+    border-radius: 5px; /* Add border radius */
+    padding: 8px; /* Adjust padding as needed */
+    width: 60%;
+}
+
+/* Style the submit button */
+.btn-submit {
+    border-color: #6c8bb7;
+    background-color: #f8d4fa;
+    color: #6c8bb7;
+    width: 20%;
+    border-radius: 5px; /* Add border radius */
+    padding: 8px; /* Adjust padding as needed */
+    font-weight: bold; /* Set the font weight to bold */
+    font-size: 20px; /* Increase the font size */
+}
+
+.btn-submit:hover {
+    background-color: #ad95c6;
+}
+
+
+.card {
+    border: 2px solid #ad95c6; /* Change border color to your desired color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px #f8d4fa(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Custom hover effect for cards */
+.card:hover {
+    transform: translateY(-5px); /* Move card slightly up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
