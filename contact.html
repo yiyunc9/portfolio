@@ -10,6 +10,8 @@
         <!-- my own CSS and css framework -->
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-D/KUf3Zl3zQ8h/5+qIAZ3tJeTlPwGzxn1V/85sxFhgMTD0DQvOcvzWL6/5wvd4xY" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +27,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a href="index.html">
-                <img src="img/logo.png" class="img-fluid" alt="logo" width="100" height="auto">
+                <img src="img/logo.png" class="img-fluid" alt="logo" width="100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -33,7 +35,7 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
                 <div class="offcanvas-header">
-                    <img src="img/logo.png" class="img-fluid" alt="logo" width="100" height="auto">
+                    <img src="img/logo.png" class="img-fluid" alt="logo" width="100">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -60,20 +62,29 @@
     <div class="pink-overlay d-flex align-items-center justify-content-center flex-column py-5">
         <h1 class="text-center larger-font mb-3" data-aos="fade-down">CONTACT</h1>
         <div class="astronaut-container mb-3 animate__animated animate__heartBeat floating">
-            <img src="img/astronaut.png" alt="Astronaut" class="img-fluid" data-aos="fade-down" width="100" height="auto">
+            <img src="img/astronaut.png" alt="Astronaut" class="img-fluid" data-aos="fade-down" width="100">
         </div>
     </div>
 
 
     <!-- Content section -->
-    <section class="contact-section" id="main-content" role="region" aria-labelledby="contact-content">
+    <section class="contact-section" id="main-content" aria-labelledby="contact-content-heading">
+        <h2 id="contact-content-heading" class="visually-hidden">Contact Content</h2>
 <div class="container">
         <div class="row justify-content-center">
                 <div class="card" data-aos="flip-down">
                     <div class="card-body">
-                        <h5 class="card-title-custom">Contact</h5>
+                        <h5 class="card-title-custom">Contact Me</h5>
                         <p><strong>Email:</strong> cao00120@algonquinlive.com</p>
         <p><strong>Based in:</strong> Ottawa, Canada</p>
+        <div class="social-icons mt-3">
+            <a href="https://discordapp.com/users/1184246746625347604" target="_blank" class="social-icon">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://www.facebook.com/share/uT2W85HsS5KfRBeZ/?mibextid=uzlsIk" target="_blank" class="social-icon facebook-icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
                     </div>
                 </div>
             </div>
@@ -81,7 +92,7 @@
 
 
     <!-- Background image -->
-    <img src="img/flowers.png" class="img-fluid mx-auto d-block" data-aos="fade-right" alt="nice to meet you" width="300" height="auto"> 
+    <img src="img/flowers.png" class="img-fluid mx-auto d-block" data-aos="fade-right" alt="nice to meet you" width="300"> 
   <div class="card-body">
     <p class="fs-1" data-aos="fade-right"><b>Get in Touch</b></p>
     <form data-aos="fade-left">
@@ -112,8 +123,8 @@
                 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
                 <script>
                   AOS.init({
-                    offset: 300,
-                    duration: 1000
+                    offset: 200,
+                    duration: 800
                   });
                 </script>  
 </body>

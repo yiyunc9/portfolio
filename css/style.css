@@ -211,6 +211,12 @@ body {
     margin-bottom: 20px;
 }
 
+/* Custom styles for social icons */
+.social-icons a {
+    border:none;
+    color: #6c8bb7;
+    font-size: 24px;
+}
 
 /* Style the form inputs and textarea */
 .form-control {
@@ -226,7 +232,7 @@ body {
     border-color: #6c8bb7;
     background-color: #f8d4fa;
     color: #6c8bb7;
-    width: 20%;
+    width: 30%;
     border-radius: 5px; /* Add border radius */
     padding: 8px; /* Adjust padding as needed */
     font-weight: bold; /* Set the font weight to bold */
@@ -241,8 +247,8 @@ body {
 .card {
     border: 2px solid #ad95c6; /* Change border color to your desired color */
     border-radius: 10px; /* Add border radius for rounded corners */
-    box-shadow: 0 4px 8px #f8d4fa(0, 0, 0, 0.1); /* Add shadow effect */
-    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+    box-shadow: 0 4px 8px rgba(248, 212, 250, 0.1); /* Fix parse error by specifying RGBA values for box-shadow */
+    transition: transform 0.3s ease; /* Fix parse error by removing unnecessary whitespace */
 }
 
 /* Custom hover effect for cards */
